@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrongPass - Dificulte a vida dos HACKERS!</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon">
+    <script type="module" src="./scripts/index.js"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href='#' class="logo">
+            <img src="./images/logo.svg" alt="Strong.Pass">
+        </a>
+
+        <nav class="nav-header">
+            <div><a href="#">Inicio</a></div>
+            <div><a href="#">Serviço</a></div>
+            <div><a href="#">Criar senha</a></div>
+        </nav>
+    </header>
+
+    <section class="company-service">
+        <div>
+            <img src="./images/img1.png" alt="Pessoa ao lado de um computador, indicando senha mais forte!">
+        </div>
+        <div class="service-info">
+            <h2>Seus dados estão <br /><span>protegidos</span>?</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Maecenas non eros at lorem scelerisque tristique.</p>
+
+            <p>Lorem ipsum dolor sit amet, <span>consectetur adipiscing</span> elit. <br> Maecenas non eros at lorem scelerisque tristique.</p>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="password-generator">
+        <h2 class="title">
+            <img src="./images/key.svg" alt="">
+            Password Generator
+        </h2>
+        <div class="generator">
+            <div class="input-password">
+                <div class="input" data-color="#00f909" data-width="100rem">
+                    <input type="text" value="Iyu#U109*j03" name="password" id="password"> 
+                    <div class="passwordStrongBar"></div>
+                </div>
+                <div class="password-functions">
+                    <button class="copyPass">
+                        <img src="./images/copy.svg" alt="">
+                    </button>
+                    <div class="v-line"></div>
+                    <button class="newPass">
+                        <img src="./images/refresh.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <form> 
+        <div class="password-length">
+            <div>
+                <label for="passwordLengthRange">Length: </label>
+                <input type="range" id="passwordLengthRange" step="1" min='4' value='12' max="50">
+                <span class="passLength"></span>
+            </div>
+        </div>
+        <div class="password-options">
+            <h2>Opções</h2>
+           <div> <input type="checkbox" checked id="passwordUpperCase">
+            <label for="passwordUpperCase">Enable UpperCase</label></div>
+            <div><input type="checkbox" checked id="passwordLowerCase">
+                <label for="passwordLowerCase">Enable LowerCase</label></div>
+            <div><input type="checkbox" checked id="passwordNumbers">
+                <label for="passwordNumbers">Enable Numbers</label></div>
+            <div><input type="checkbox" id="passwordSimilar">
+                <label for="passwordSimilar">Exclude Similar</label></div>
+        </div>
+        <div class="password-symbols">
+           
+                <h2>Símbolos</h2>
+                <div>
+                    <div><input type="radio" class='passwordSymbols' id='passwordSymbolsExclude'    name="passwordSymbols" value="exclude"></div>
+                    <label for="passwordSymbolsExclude">Exclude</label>
+                </div>
+                <div>
+                    <div>
+                    <input type="radio" class='passwordSymbols' id='passwordSymbolsSymbols'    name="passwordSymbols" checked value="symbols">
+                    </div>
+                    <label for="passwordSymbolsSymbols">Only !#$%&()*+/</label>
+                </div>
+                <div>
+                    <div><input type="radio" class='passwordSymbols' id='passwordSymbolsAllSymbols' name="passwordSymbols" value="all-symbols"></div>
+                    <label for="passwordSymbolsAllSymbols">All Symbols</label>
+                </div>
+            
+        </div>
+        <button class="hidden">OK</button>
+    </form>
+        </div>
+    </section> 
+    <div class="toast-wrapper">
+        <div class="toast">
+            <p></p>
+        </div>
+    </div>
+    <footer>
+        <h2>Feito com 💜 por Renan</h2>
+        <p>
+            Utilizando um design da <a href="https://rocketseat.com.br/" target="_blank">Rocket Seat</a> como base para criação!
+        </p>
+</footer>
+</body>
+</html>

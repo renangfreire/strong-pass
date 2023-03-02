@@ -1,0 +1,1 @@
+Ideia de design: utilizar os elementos do site: https://rocketseat-education.github.io/desafio-avancado-rocketsect/#, mas criar um design proprio no figma, vai ser daora.
