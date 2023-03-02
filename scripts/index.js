@@ -17,6 +17,7 @@ const passwordStrongBar = document.querySelector('.passwordStrongBar')
 const copyButton = document.querySelector('.copyPass')
 const newPassButton = document.querySelector('.newPass')
 const toast = document.querySelector('.toast')
+const toastWrapper = document.querySelector('.toast-wrapper')
 
 let toastTimeout
 
@@ -145,10 +146,12 @@ function passwordStrongMeter(length){
 
 function showToast(message){
     toast.classList.add('active')
+    toastWrapper.classList.add('active')
     toast.querySelector('p').textContent = message
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             toast.classList.remove('active')
+            toastWrapper.classList.remove('active')
             resolve('done')
         }, 2000)
     })

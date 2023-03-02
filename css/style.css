@@ -23,6 +23,7 @@
 html{
     font-family: 'JetBrains Mono', sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -418,6 +419,7 @@ form button.hidden{
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 
     z-index: 10;
 }
@@ -429,7 +431,6 @@ form button.hidden{
     border-radius: .4rem;
     transform: translateY(-200%);
 
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -440,12 +441,13 @@ form button.hidden{
     transform: translateY(0);
 }
 
+.toast-wrapper.active{
+    visibility: visible;
+}
+
 .toast p{
     font-size: 1.4rem;
 }
-
-
-
 
 footer{
     padding: 6rem;
